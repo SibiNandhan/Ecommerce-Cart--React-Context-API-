@@ -1,12 +1,10 @@
 import React, { useContext, useState } from "react";
 import faker from "faker";
 import { SingleProduct } from "./SingleProduct";
-import { Cart } from "./../Context";
+
 faker.seed(100);
 
 export const Home = () => {
-  const { cart, setCart } = useContext(Cart);
-
   const productArray = [...Array(20)].map(() => {
     return {
       id: faker.datatype.uuid(),
