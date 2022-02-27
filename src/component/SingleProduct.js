@@ -7,7 +7,7 @@ export const SingleProduct = ({ prod }) => {
   const { cart, setCart } = useContext(Cart);
 
   return (
-    <div className="products">
+    <div className="products" style={{ backgroundColor: "grey" }}>
       <img src={image} alt={name}></img>
       <div className="productDesc">
         <span style={{ fontWeight: 700 }}>{name}</span>

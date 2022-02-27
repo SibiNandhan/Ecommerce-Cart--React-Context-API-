@@ -5,7 +5,12 @@ import { Cart } from "./../Context";
 faker.seed(100);
 
 export const Home = () => {
+
   console.log(useContext(Cart));
+=======
+  const { cart, setCart } = useContext(Cart);
+
+
   const productArray = [...Array(20)].map(() => {
     return {
       id: faker.datatype.uuid(),
