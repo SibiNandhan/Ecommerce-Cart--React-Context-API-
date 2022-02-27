@@ -6,7 +6,7 @@ faker.seed(100);
 
 export const Home = () => {
   const { cart, setCart } = useContext(Cart);
-  console.log(useContext(Cart));
+
   const productArray = [...Array(20)].map(() => {
     return {
       id: faker.datatype.uuid(),
