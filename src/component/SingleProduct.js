@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { Cart } from "../Context";
 
 export const SingleProduct = ({ prod }) => {
-  const { id, name, price, image } = prod;
+  const { name, price, image } = prod;
 
   const { cart, setCart } = useContext(Cart);
 
