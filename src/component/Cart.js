@@ -3,7 +3,7 @@ import { SingleProduct } from "./SingleProduct";
 import { Cart as Carts } from "./../Context";
 
 export const Cart = () => {
-  const { cart, setCart } = useContext(Carts);
+  const { cart } = useContext(Carts);
   let [total, setTotal] = useState(0);
 
   useEffect(() => {
